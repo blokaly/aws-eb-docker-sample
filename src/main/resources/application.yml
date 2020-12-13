@@ -3,3 +3,10 @@ spring:
     active: local
   main:
     banner-mode: "off"
+
+  datasource:
+    url: jdbc:postgresql://localhost/testdb
+    username: test
+    password: test
+  jpa:
+    generate-ddl: true
