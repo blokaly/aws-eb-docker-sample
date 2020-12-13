@@ -1,0 +1,9 @@
+services:
+  web:
+    build: .
+    environment:
+      - DEBUG=1
+    env_file:
+      - .env
+    volumes:
+      - "${EB_LOG_BASE_DIR}/<service name>:<log directory inside container>"
